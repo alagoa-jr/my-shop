@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">My Shop</a>
+    <ul>
+      <li><a href="index.html">Back to Shop</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-box">
+    <h2>Create an Account</h2>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p class="form-note">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+</body>
+</html>

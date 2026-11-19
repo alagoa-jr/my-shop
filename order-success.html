@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Ready - My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="logo">My Shop</a>
+    </div>
+    <ul>
+      <li><a href="index.html">Back to Shop</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-box success-box">
+    <h2>One last step!</h2>
+    <p>Your order is ready. Tap the button below to send it to us on WhatsApp. <strong>Your order is not received until you send the message.</strong></p>
+
+    <a href="#" id="whatsapp-link" class="banner-button">Send Order on WhatsApp</a>
+
+    <div id="bank-info" class="bank-details">
+  <p><strong>Paying by bank transfer?</strong></p>
+  <p>Bank: GTBank<br>
+  Account number: 0123456789<br>
+  Account name: Your Name or Business Name</p>
+  <p>After paying, send your receipt on WhatsApp so we can confirm your order.</p>
+</div>
+
+<p class="form-note"><a href="index.html">Continue shopping</a></p>
+  </div>
+
+  <script>
+    const link = localStorage.getItem("myShopLastOrder");
+    const button = document.getElementById("whatsapp-link");
+
+    if (link) {
+      button.href = link;
+    } else {
+      button.style.display = "none";
+      document.querySelector(".success-box p").textContent =
+        "We could not find a recent order. Please go back to the shop.";
+    }
+  </script>
+
+</body>
+</html>

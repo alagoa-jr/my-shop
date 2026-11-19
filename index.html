@@ -1,0 +1,275 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <input type="checkbox" id="sidebar-toggle">
+
+<aside class="sidebar">
+  <label for="sidebar-toggle" class="sidebar-close">✕</label>
+
+  <section class="sidebar-section">
+    <h3>About Us</h3>
+    <p>We are a Benin City based business that delivers fresh, quality products to your door. Write 2 or 3 sentences here about who you are and why you started.</p>
+  </section>
+
+  <section class="sidebar-section">
+    <h3>Our Team</h3>
+
+    <div class="staff">
+      <div class="avatar">JD</div>
+      <div>
+        <p class="staff-name">John Doe</p>
+        <p class="staff-role">Founder</p>
+      </div>
+    </div>
+
+    <div class="staff">
+      <div class="avatar">AO</div>
+      <div>
+        <p class="staff-name">Ada Okoro</p>
+        <p class="staff-role">Customer Support</p>
+      </div>
+    </div>
+
+    <div class="staff">
+      <div class="avatar">PE</div>
+      <div>
+        <p class="staff-name">Peter Eze</p>
+        <p class="staff-role">Delivery Manager</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sidebar-section">
+    <h3>Careers</h3>
+    <p>We are hiring. Apply for any open position below.</p>
+
+    <div class="job">
+      <h4>Delivery Rider</h4>
+      <p>Full time. Must know Benin City well and own a motorbike.</p>
+      <a href="mailto:jobs@example.com?subject=Application: Delivery Rider" class="apply-button">Apply</a>
+    </div>
+
+    <div class="job">
+      <h4>Customer Service Agent</h4>
+      <p>Part time. Answer customer calls and messages.</p>
+      <a href="mailto:jobs@example.com?subject=Application: Customer Service Agent" class="apply-button">Apply</a>
+    </div>
+  </section>
+</aside>
+
+<label for="sidebar-toggle" class="sidebar-overlay"></label>
+
+    <nav>
+      <div class="nav-left">
+    <label for="sidebar-toggle" class="sidebar-open">☰</label>
+    <a href="#" class="logo">My Shop</a>
+      </div>
+      
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#cart" id="cart-count">Cart (0)</a></li>
+    <li><a href="login.html" class="nav-button">Login</a></li>
+<li><a href="register.html" class="nav-button nav-button-filled">Register</a></li>
+  </ul>
+</nav>
+
+    <header id="home">
+      <h1>Welcome to My Shop</h1>
+      <p>Order fresh products and get them delivered to your door.</p>
+    </header>
+  
+
+    <section id="new-product" class="banner">
+  <div class="banner-text">
+    <p class="badge">NEW</p>
+    <h2>Introducing Our Newest Product</h2>
+    <p>A short sentence about what makes it special. Limited stock available!</p>
+    <a href="#products" class="banner-button">Order Now</a>
+  </div>
+</section>
+    
+<main id="products">
+      <h2>Our Products</h2>
+
+     <div class="product">
+  <h3>Product One</h3>
+  <p>A short description of this product.</p>
+  <p class="price">₦2,000</p>
+  <button class="add-to-cart" data-id="p1" data-name="Product One" data-price="2000">Add to Cart</button>
+</div>
+
+<div class="product">
+  <h3>Product Two</h3>
+  <p>A short description of this product.</p>
+  <p class="price">₦3,500</p>
+  <button class="add-to-cart" data-id="p2" data-name="Product Two" data-price="3500">Add to Cart</button>
+</div>
+
+<div class="product">
+  <h3>Product Three</h3>
+  <p>A short description of this product.</p>
+  <p class="price">₦1,500</p>
+  <button class="add-to-cart" data-id="p3" data-name="Product Three" data-price="1500">Add to Cart</button>
+</div>
+
+      <div class="product">
+         <h3>Product Four</h3>
+         <p>A short description of this product.</p>
+         <p class="Price">₦1,000</p>
+         <button class="add-to-cart" data-id="p4" data-name="Product Three" data-price="1000">Add to Cart</button>
+      </div>
+ </main>
+
+
+ <section id="cart">
+  <h2>Your Cart</h2>
+
+  <div class="cart-box">
+    <div id="cart-items"></div>
+
+    <div class="summary-row summary-total">
+      <span>Total</span>
+      <span id="cart-total">₦0</span>
+    </div>
+
+    <a href="checkout.html" class="banner-button" id="checkout-link">Proceed to Checkout</a>
+  </div>
+</section>
+
+<section id="coming-soon">
+  <h2>Coming Soon</h2>
+
+  <div class="coming-soon-list">
+
+    <div class="coming-soon-card">
+      <p class="badge badge-soon">COMING SOON</p>
+      <h3>Product Name</h3>
+      <p>A short teaser about this product.</p>
+      <p>Expected: December 2026</p>
+    </div>
+
+    <div class="coming-soon-card">
+      <p class="badge badge-soon">COMING SOON</p>
+      <h3>Another Product</h3>
+      <p>A short teaser about this product.</p>
+      <p>Expected: January 2027</p>
+    </div>
+
+  </div>
+</section>
+
+ <section id="testimonials">
+  <h2>What Our Customers Say</h2>
+
+  <div class="testimonial-list">
+
+    <div class="testimonial">
+      <p>"My order arrived fresh and on time. I will definitely order again!"</p>
+      <p class="customer-name">Chioma, Benin City</p>
+    </div>
+
+    <div class="testimonial">
+      <p>"Very easy to order and the delivery was fast. Highly recommended."</p>
+      <p class="customer-name">Emeka, Ugbowo</p>
+    </div>
+
+    <div class="testimonial">
+      <p>"Good quality products at fair prices. The seller was very friendly."</p>
+      <p class="customer-name">Blessing, GRA</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary>How do I place an order?</summary>
+    <p>Browse our products, click "Add to Cart" on what you want, then go to your cart and fill in your name, phone number, and delivery address. Submit the form and we will contact you to confirm.</p>
+  </details>
+
+  <details>
+    <summary>How long does delivery take?</summary>
+    <p>Orders within Benin City are usually delivered the same day or within 24 hours after confirmation.</p>
+  </details>
+
+  <details>
+    <summary>How much is delivery?</summary>
+    <p>Delivery fees depend on your location. We will tell you the exact fee when we confirm your order.</p>
+  </details>
+
+  <details>
+  <summary>How can I pay?</summary>
+  <p>You can pay by bank transfer or pay on delivery.</p>
+  <p><strong>Bank transfer details:</strong></p>
+    <p class="bank-details">Bank: GTBank<br>
+  Account number: 0123456789<br>
+  Account name: Your Name or Business Name</p>
+  <p>After paying, send us your payment receipt on WhatsApp so we can confirm your order.</p>
+</details>
+
+  <details>
+    <summary>Can I cancel or change my order?</summary>
+    <p>Yes, as long as it has not been sent out for delivery. Contact us as soon as possible.</p>
+  </details>
+
+</section>
+
+
+<footer id="contact">
+  <div class="footer-columns">
+
+    <div class="footer-column">
+      <h3>My Shop</h3>
+      <p>Fresh, quality products delivered to your door in Benin City.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><label for="sidebar-toggle" class="footer-link">About Us</label></li>
+        <li><label for="sidebar-toggle" class="footer-link">Careers</label></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#coming-soon">Coming Soon</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Help</h3>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#faq">How to Order</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <p>Phone: 080 0000 0000</p>
+      <p>Address: Benin City, Edo State</p>
+    </div>
+
+  </div>
+
+  <p class="footer-bottom">&copy; 2026 My Shop. All rights reserved.</p>
+</footer>
+  <script src="cart.js"></script>
+
+</body>
+</html>
